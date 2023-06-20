@@ -1,7 +1,17 @@
-const App = () => (
-  <div>
-    <p>Hello there!</p>
-  </div>
-)
+const App = () => {
+  const now = new Date();
+  const a = 10;
+  const b = 20;
+  console.log(now, a + b);
 
-export default App
+  return (
+    <div>
+      <p>Hello there!</p>
+      <p>
+        {a} plus {b} is {a + b}
+      </p>
+    </div>
+  );
+};
+
+export default App;
